@@ -17,3 +17,12 @@ $(window).on("wheel", function(e) {
     var posTop =(page-1) * $(window).height();
     mHtml.animate({scrollTop : posTop});
 })
+
+// 💛 자연은
+$(".projectB_R").mouseenter(function(){
+    $('.projectB_R').addClass("on")
+    // $('.mainSwiper').addClass("on")
+    }).mouseleave(function(){
+    $('.projectB_R').removeClass("on")
+    // $('.mainSwiper').removeClass("on")
+    })
