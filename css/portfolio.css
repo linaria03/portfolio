@@ -198,6 +198,7 @@ h1 span:nth-child(8) {
 /* section2 */
 #section2 .inner{
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 #section2 h2{
@@ -237,6 +238,7 @@ h1 span:nth-child(8) {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
 }
 /* .basic div{
   display: flex;
