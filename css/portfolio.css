@@ -30,7 +30,7 @@ a {
   text-decoration: none;
 }
 .inner{
-  width: 1440px;
+  width: 1200px;
 }
 .inner600 {
   width: 600px;
@@ -225,6 +225,7 @@ h1 span:nth-child(8) {
 .self h3{
   font-size: 1.875rem;
   color: #BF365A;
+  letter-spacing: 5px;
 }
 .self p{
   font-family: 'Jua', sans-serif;
@@ -237,9 +238,15 @@ h1 span:nth-child(8) {
   flex-direction: column;
   align-items: flex-start;
 }
+/* .basic div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} */
 .basic h3{
   color: #BF365A;
   font-size: 2rem;
+  letter-spacing: 5px;
 }
 .education{
   padding: 0 0 15px 0;
@@ -254,17 +261,27 @@ h1 span:nth-child(8) {
 .skill{
   padding: 0 0 15px 0;
 }
+.skill .skills_sub{
+  display: flex;
+  flex-direction: row;
+}
 .skills_sub img:first-child{
   width: 26%;
 }
 .skills_sub img{
   width: 10%;
 }
+.tel{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
 .mbti{
   padding: 0 0 15px 0;
 }
-.mbti_sub{
+.mbti .mbti_sub{
   display: flex;
+  flex-direction: row;
   gap: 10px;
   font-size: 1.5rem;
 }
@@ -272,6 +289,9 @@ h1 span:nth-child(8) {
   border: 2px solid #362A2A;
   padding: 10px 21px;
   border-radius: 100%;
+}
+.contact{
+  padding: 10px 0;
 }
 .contact p{
   font-family: 'Jua', sans-serif;
@@ -421,6 +441,7 @@ h1 span:nth-child(8) {
   width: 30%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: 20px 0 20px 50px;
 }
 
