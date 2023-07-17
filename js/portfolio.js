@@ -18,21 +18,21 @@ $(window).on("wheel", function(e) {
     mHtml.animate({scrollTop : posTop});
 })
 
-// 💛 좌구산
-$(".projectA_L").mouseenter(function(){
-    $('.projectA_L').addClass("on")
-    // $('.mainSwiper').addClass("on")
-    }).mouseleave(function(){
-    $('.projectA_L').removeClass("on")
-    // $('.mainSwiper').removeClass("on")
-    })
+// // 💛 좌구산
+// $(".projectA_L").mouseenter(function(){
+//     $('.projectA_L').addClass("on")
+//     // $('.mainSwiper').addClass("on")
+//     }).mouseleave(function(){
+//     $('.projectA_L').removeClass("on")
+//     // $('.mainSwiper').removeClass("on")
+//     })
 
-// 좌구산 슬라이드
-var swiper = new Swiper(".jwagusanSwiper", {
-    slidesPerView: "auto",
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
+// // 좌구산 슬라이드
+// var swiper = new Swiper(".jwagusanSwiper", {
+//     slidesPerView: "auto",
+//     spaceBetween: 30,
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
+//     },
+//   });
