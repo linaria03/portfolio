@@ -1,3 +1,24 @@
+// 💛 원페이지 스크롤 애니매이션
+var mHtml = $("html");
+var page = 1;
+
+
+mHtml.animate({ scrollTop: 0 }, 10);
+
+$(window).on("wheel", function (e) {
+  if (mHtml.is(":animated")) return;
+  if (e.originalEvent.deltaY > 0) {
+    if (page == 5) return;
+    page++;
+  } else if (e.originalEvent.deltaY < 0) {
+    if (page == 1) return;
+    page--;
+  }  
+  var posTop = (page - 1) * $(window).height();
+  mHtml.animate({ scrollTop: posTop });
+})  
+
+
 const $text = document.querySelector(".typing .text");
 
 // 글자 모음
@@ -87,25 +108,6 @@ $(function () {
 });
 
 
-// 💛 원페이지 스크롤 애니매이션
-var mHtml = $("html");
-var page = 1;
-
-
-mHtml.animate({ scrollTop: 0 }, 10);
-
-$(window).on("wheel", function (e) {
-  if (mHtml.is(":animated")) return;
-  if (e.originalEvent.deltaY > 0) {
-    if (page == 5) return;
-    page++;
-  } else if (e.originalEvent.deltaY < 0) {
-    if (page == 1) return;
-    page--;
-  }  
-  var posTop = (page - 1) * $(window).height();
-  mHtml.animate({ scrollTop: posTop });
-})  
 
 // 💛 좌구산
 $(".projectA_L").mouseenter(function(){
